@@ -1,6 +1,6 @@
 class Hello{
     public static void main(String[]args ){
-      System.out.print("hello ,ÀÚ¹Ù !!!");
+      System.out.print("hello ,JAVA !!!");
 
     }
 }
