@@ -11,7 +11,7 @@ class WhereLive{
        gu = sc.next();
        System.out.println("동은 어디시죠");
        dong = sc.next();
-       System.out.println("저는" + location + gu + dong + "에 살고 있습니다" );
+       System.out.println(String.format("저는 %s %s %s 에 살고 있습니다",location,gu,dong ));
        
        
 
