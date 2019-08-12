@@ -13,10 +13,10 @@ class Dice{
        
         System.out.println("홀 , 짝를 선택하세요");
         Scanner sc = new Scanner(System.in);
-        Random ran  =new Random();
+        Random ran  =new Random();//랜덤으로 숫자를 뽑아내는 코드
 
         int number = 0;
-        number = ran.nextInt(6)+1;
+        number = ran.nextInt(6)+1;//0을 제외한 6까지의 숫자가 임의적으로 나온다.
         System.out.println(String.format("랜덤으로 나온 수 %d ",number));
 
         int dap = 0;
@@ -24,11 +24,14 @@ class Dice{
         System.out.println("dap 값은 :"+dap);
 
         if(number%dap==0){
+            //조건식은 임의의 숫자와 입력한 값과 나누어서 나머지가 =0 짝수를 출력한다
             System.out.println("짝수 입니다");
         }else if (number % dap !=0){
+            //조건식은 임의의 숫자와 입력한 값과 나누어서 나머지가 0이 아니면 홀수를 출력
             System.out.println("홀수 입니다");
         }else{
             System.out.println("다시 입력하세요");
+            
         }
     }
     
